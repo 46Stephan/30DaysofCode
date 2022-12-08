@@ -3,12 +3,17 @@
 partir dos valores vendidos em cada um dos
 meses do 1º Trim de 2018 de um vendedor */
 
+var vendedor, jan, fev, mar, media;
 
-const venda1 = parseFloat(prompt('Informe o valor, referente a VENDA 1: R$ '));
-const venda2 = parseFloat(prompt('Informe o valor, referente a VENDA 2: R$ '));
-const venda3 = parseFloat(prompt('Informe o valor, referente a VENDA 3: R$ '));
+vendedor = prompt('Informe o nome do vendedor','Digite aqui: ');
 
-let mediaPrimeiroTri = (venda1 + venda2 + venda3) / 3;
+jan = prompt('Informe o valor das vendas, referente ao mês JANEIRO', 'Digite aqui: ');
+fev = prompt('Informe o valor das vendas, referente ao mês de FEVEREIRO', 'Digite aqui: ');
+mar = prompt('Informe o valor das vendas, referente ao mês de MARÇO', 'Digite aqui: ');
 
-document.write('O valor médio no primeiro trimestre de 2018 foi de R$ '+mediaPrimeiroTri+ ' reais.');
+media = (parseFloat(jan)+parseFloat(fev)+parseFloat(mar)) / 3;
+
+    console.log('A média de vendas do vendedor' +vendedor+ ' no 1º trimestre foi de R$ '+media);
+
+    alert('A média de vendas do vendedor ' +vendedor+ ' no 1º trimestre foi de R$ '+media);
 </script>
