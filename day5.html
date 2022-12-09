@@ -1,0 +1,20 @@
+<script>
+    /*Verificar se é dia, tarde ou noite e mostrar uma mensagem personalizada. */
+
+
+    var dataCompleta;
+    var horaAtual;
+
+    dataCompleta = new Date();
+    horaAtual = dataCompleta.getHours();
+
+if(horaAtual < 12){
+    alert('BOM DIA!');
+
+}else if(horaAtual <18){
+    alert('BOA TARDE!');
+
+}else{
+    alert('BOA NOITE!');
+}
+</script>
