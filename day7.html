@@ -1,0 +1,33 @@
+<script>
+/* Nossa missão é verificar qual dia é hoje(da semana) e escrever por extenso. */
+
+    var data = new Date();
+    var diaDaSemana = data.getDay();
+    var diaDaSemanaExtenso;
+
+    switch(diaDaSemana){
+        case 1:
+            diaDaSemanaExtenso = "Domingo";
+            break;
+        case 2:
+            diaDaSemanaExtenso = "Segunda-Feira";
+            break;
+        case 3:
+            diaDaSemanaExtenso = "Terça-Feira";
+            break;
+        case 4:
+            diaDaSemanaExtenso = "Quarta-Feira";
+            break;
+        case 5:
+            diaDaSemanaExtenso = "Quinta-Feira";
+            break;
+        case 6:
+            diaDaSemanaExtenso = "Sexta-Feira";
+            break;
+        default:
+            diaDaSemanaExtenso = "Sábado";
+            break;
+    }
+
+    alert(`Hoje é ${diaDaSemanaExtenso} .`);
+</script>
