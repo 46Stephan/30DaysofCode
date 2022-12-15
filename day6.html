@@ -4,16 +4,16 @@
 
     let saldoHoras = 0;
 
-    let horasTrabalhadas = prompt('Informe o total de horas trabalhadas do funcionário esta semana: ','Digite aqui');
+    let horasTrabalhadas = prompt('Informe o total de horas trabalhadas do funcionário esta semana: ', 'Digite aqui');
 
 
     saldoHoras = horasTrabalhadas - cargaHoraria;
 
-    if(saldoHoras > 0){
+    if (saldoHoras > 0) {
         alert(`O funcionário fez ${saldoHoras} hora(s) extra(s) nesta semana.`);
-    } else if(saldoHoras < 0){
+    } else if (saldoHoras < 0) {
         alert(`O funcionário está devendo ${saldoHoras * -1} hora(s) nesta semana.`);
-    }else{
+    } else {
         alert(`O funcionário não possui hora exta essa semana.`);
     }
 </script>

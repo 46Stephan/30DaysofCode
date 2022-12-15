@@ -1,12 +1,12 @@
 <script>
-/* Vamos efetuar um cálculo à partir de dois valores informados pelo usuário e de acordo com a operação escolhida pelo usuário. Vamos pedir os valores e a
-operação. Digite: */
+    /* Vamos efetuar um cálculo à partir de dois valores informados pelo usuário e de acordo com a operação escolhida pelo usuário. Vamos pedir os valores e a
+    operação. Digite: */
     let numero1 = prompt('Digite o primeiro numero ', 'Digite aqui');
     let numero2 = prompt('Digite o segundo numero ', 'Digite aqui');
 
     let operacao = prompt('Informe o operador: \nAdição (+) \nSubtração (-) \nMultiplicação (*) \nDivisão (/)', 'Digite aqui');
 
-    switch (operacao){
+    switch (operacao) {
         case '+':
             resultado = parseFloat(numero1) + parseFloat(numero2);
             break;
@@ -21,7 +21,7 @@ operação. Digite: */
             break
         default:
             alert('Operação inválida');
-}
+    }
 
-console.log('O resultado é '+ resultado);
+    console.log('O resultado é ' + resultado);
 </script>

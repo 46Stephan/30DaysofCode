@@ -1,19 +1,17 @@
 <script>
-    /*Dia 3 - Missão: Calcular a média de venda à
-partir dos valores vendidos em cada um dos
-meses do 1º Trim de 2018 de um vendedor */
+    /*Dia 3 - Missão: Calcular a média de venda à partir dos valores vendidos em cada um dos meses do 1º Trim de 2018 de um vendedor */
 
-var vendedor, jan, fev, mar, media;
+    var vendedor, jan, fev, mar, media;
 
-vendedor = prompt('Informe o nome do vendedor','Digite aqui: ');
+    vendedor = prompt('Informe o nome do vendedor', 'Digite aqui: ');
 
-jan = prompt('Informe o valor das vendas, referente ao mês JANEIRO', 'Digite aqui: ');
-fev = prompt('Informe o valor das vendas, referente ao mês de FEVEREIRO', 'Digite aqui: ');
-mar = prompt('Informe o valor das vendas, referente ao mês de MARÇO', 'Digite aqui: ');
+    jan = prompt('Informe o valor das vendas, referente ao mês JANEIRO', 'Digite aqui: ');
+    fev = prompt('Informe o valor das vendas, referente ao mês de FEVEREIRO', 'Digite aqui: ');
+    mar = prompt('Informe o valor das vendas, referente ao mês de MARÇO', 'Digite aqui: ');
 
-media = (parseFloat(jan)+parseFloat(fev)+parseFloat(mar)) / 3;
+    media = (parseFloat(jan) + parseFloat(fev) + parseFloat(mar)) / 3;
 
-    console.log('A média de vendas do vendedor' +vendedor+ ' no 1º trimestre foi de R$ '+media);
+    console.log('A média de vendas do vendedor' + vendedor + ' no 1º trimestre foi de R$ ' + media);
 
-    alert('A média de vendas do vendedor ' +vendedor+ ' no 1º trimestre foi de R$ '+media);
+    alert('A média de vendas do vendedor ' + vendedor + ' no 1º trimestre foi de R$ ' + media);
 </script>
