@@ -11,39 +11,39 @@
     animais[2] = "Cobra é uma denominação genérica, utilizada frequentemente na língua portuguesa como sinônimo de serpentes.";
     animais[3] = "Na linguagem vulgar, chama-se lagarta ao primeiro estágio larval dos insetos da ordem do lepidoptera."
 
-    while(continuar == "S"){
+    while (continuar == "S") {
         console.clear();
 
-        animalExibir = prompt("Escolha uma opção abaixo: \n[0] Aranha \n[1] Escorpião \n[2] Cobra \n[3]Lagarta" , "Digite aqui");
+        animalExibir = prompt("Escolha uma opção abaixo: \n[0] Aranha \n[1] Escorpião \n[2] Cobra \n[3]Lagarta", "Digite aqui");
 
-        switch(animalExibir){
+        switch (animalExibir) {
             case "0":
                 console.log("Aranha");
                 console.log(animais[animalExibir]);
                 break;
 
-                case "1":
+            case "1":
                 console.log("Escorpião");
                 console.log(animais[animalExibir]);
                 break;
 
-                case "2":
+            case "2":
                 console.log("Cobra");
                 console.log(animais[animalExibir]);
                 break;
 
-                case "3":
+            case "3":
                 console.log("Lagarto");
                 console.log(animais[animalExibir]);
                 break;
 
-                default:
-                    console.log("Opção Inválida");
-                    break;
+            default:
+                console.log("Opção Inválida");
+                break;
 
         }
 
-        continuar = prompt("Você deseja ver outro animal? [S]im / [N]ão " , "Digite aqui");
+        continuar = prompt("Você deseja ver outro animal? [S]im / [N]ão ", "Digite aqui");
     }
 
     console.clear();
