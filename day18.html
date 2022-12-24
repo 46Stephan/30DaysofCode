@@ -3,25 +3,25 @@
     // curso. No caso do conteúdo programático, o usuário pode informar quantas vezes quiser.
 
 
-    let nomeCurso = prompt('Informe o nome do curso:','Digite aqui');
-    let codigoCurso = prompt('Informe o código do curso: ','Digite aqui');
+    let nomeCurso = prompt('Informe o nome do curso:', 'Digite aqui');
+    let codigoCurso = prompt('Informe o código do curso: ', 'Digite aqui');
     let conteudoCurso = [];
     let novoConteudo = "S";
     let conteudoTemp = "";
     let contador = 0;
 
-    while(novoConteudo == "S"){
-        conteudoTemp = prompt('Informe o conteúdo do curso: ','Digite aqui');
+    while (novoConteudo == "S") {
+        conteudoTemp = prompt('Informe o conteúdo do curso: ', 'Digite aqui');
         conteudoCurso.push(conteudoTemp);
-        novoConteudo = prompt('Deseja cadastrar um novo conteúdo para o curso? [S]im / [N]ao' , 'Digite aqui');
+        novoConteudo = prompt('Deseja cadastrar um novo conteúdo para o curso? [S]im / [N]ao', 'Digite aqui');
     }
 
     console.clear();
-    console.log('Código: '+codigoCurso);
-    console.log('Curso: '+nomeCurso);
+    console.log('Código: ' + codigoCurso);
+    console.log('Curso: ' + nomeCurso);
     console.log('Conteúdo: ');
 
-    while(contador < conteudoCurso.length){
+    while (contador < conteudoCurso.length) {
         console.log(conteudoCurso[contador]);
         contador++;
     }
