@@ -1,26 +1,26 @@
 <script>
 
-//A missão consiste em criar uma agenda de contatos que contenham os
-//seguintes dados: nome, telefone e cidade. Para cada parte de informação
-//teremos um array diferente, então nosso código terá os arrays: nomes,telefones e cidades.
+    //A missão consiste em criar uma agenda de contatos que contenham os
+    //seguintes dados: nome, telefone e cidade. Para cada parte de informação
+    //teremos um array diferente, então nosso código terá os arrays: nomes,telefones e cidades.
 
-let nomes = [];
-let telefones = [];
-let cidades = [];
-let novoContato = "S";
-let contador = 0;
+    let nomes = [];
+    let telefones = [];
+    let cidades = [];
+    let novoContato = "S";
+    let contador = 0;
 
-while(novoContato=="S"){
-    nomes[contador] = prompt('Informe o nome','');
-    telefones[contador] = prompt('Informe o telefone','');
-    cidades[contador] = prompt('Informe a cidade','');
-    novoContato = prompt('Cadastrar novo contato? [S]im / [N]ão','');
-}
+    while (novoContato == "S") {
+        nomes[contador] = prompt('Informe o nome', '');
+        telefones[contador] = prompt('Informe o telefone', '');
+        cidades[contador] = prompt('Informe a cidade', '');
+        novoContato = prompt('Cadastrar novo contato? [S]im / [N]ão', '');
+    }
 
-for(i=0;i<nomes.length;i++){
-    console.log('Nome: '+nomes[i]);
-    console.log('Telefone: '+telefones[i]);
-    console.log('Cidade: '+cidades[i]);
-    console.log('-------------');
-}
+    for (i = 0; i < nomes.length; i++) {
+        console.log('Nome: ' + nomes[i]);
+        console.log('Telefone: ' + telefones[i]);
+        console.log('Cidade: ' + cidades[i]);
+        console.log('-------------');
+    }
 </script>
